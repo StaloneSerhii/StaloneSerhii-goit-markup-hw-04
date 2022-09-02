@@ -6,6 +6,7 @@
     --fon:#2F303A;
     --backraund-usteam: #F5F4FA;
     --icon: #AFB1B8;
+    --bord: #ECECEC;
 }
 
 /* King tags */
@@ -70,7 +71,6 @@ img {
     line-height: 1.2;
 
     margin-right: 93px;
-
     padding-top: 24px;
     padding-bottom: 25px;
     }
@@ -88,7 +88,7 @@ img {
 }
 
 .bord {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--bord);
 }
 
 .item {
@@ -125,12 +125,14 @@ img {
     color: var(--bacraund-color-button);
 }
 
+/* hover contacts */
+
 .link:focus,
 .link:hover {
     color: var(--bacraund-color-button);
 }
 
-/* hover contacts */
+/* icon nav */
 
 .icon-social {
     display: flex;
@@ -176,6 +178,7 @@ img {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+
 
     background-image: linear-gradient(
         to right,
@@ -286,6 +289,7 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
 
 /* TEXT MAIN */
 
@@ -407,6 +411,7 @@ img {
 
 /* /svg us company */
 
+
 /* Clients */
 
 .client {
@@ -432,6 +437,7 @@ img {
     cursor: pointer;
 }
 
+/* ico clients */
 .icon-client:hover {
     border-color: var(--bacraund-color-button);
 }
@@ -453,10 +459,6 @@ img {
 .botton-filtr {
     cursor: pointer;
 }
-
-
-
-
 
 .filtr {
     position: absolute;
@@ -567,7 +569,7 @@ img {
 
 /* /ico footer */
 
-/* Table */
+/* Cart Box */
 
 .card-set {
     display: flex;
@@ -595,7 +597,8 @@ img {
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); } 
 
-  .menu-h2 {
+
+.menu-h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -605,6 +608,7 @@ img {
 
     margin-bottom: 4px;
   }
+
 .menu-p {
     font-family: 'Roboto';
     font-style: normal;
