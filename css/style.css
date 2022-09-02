@@ -138,6 +138,7 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .icon-social:focus,
@@ -147,7 +148,6 @@ img {
 
 .icon-svg {
     fill: currentColor;
-    cursor: pointer;
 }
 
 /* /hover contacts */
