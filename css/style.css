@@ -92,9 +92,12 @@ img {
 }
 
 .item {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 
@@ -134,18 +137,6 @@ img {
 
 /* icon nav */
 
-.icon-social {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.icon-social:focus,
-.icon-social:hover {
-    color: var(--bacraund-color-button);
-}
-
 .icon-svg {
     fill: currentColor;
 }
@@ -180,12 +171,11 @@ img {
     margin-right: auto;
 
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url(../images/hero.jpg); 
-
+      background-image: linear-gradient(
+        270deg, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
     background-color: var(--fon); 
     background-size: cover;
     background-position: center; 
@@ -302,7 +292,11 @@ img {
 .icon-us {
     display: flex;
     justify-content: center;
-    margin: 25px 100px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px; 
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .size-info {
@@ -380,6 +374,7 @@ img {
     list-style: none;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .icon-delp {
@@ -402,7 +397,7 @@ img {
     justify-content: center;
     width: 44px;
     height: 44px;
-    margin-bottom: 30px;
+
 }
 
 .icon-soc {
@@ -476,6 +471,7 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    height: 31px;
 }
 
 .adres-footer {
@@ -488,7 +484,6 @@ img {
 }
 
 .addres .addres-ul {
-
     margin-top: 20px;
     padding: 0;
 }
@@ -515,10 +510,10 @@ img {
     padding-bottom: 60px;
 }
 
-.footer-icon h2 {
+.footer-icon p {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -528,7 +523,7 @@ img {
 /* ico footer */
 
 .position-icon {
-    display: flex;
+     display: flex; 
 }
 
 .footer-icon {
@@ -592,6 +587,7 @@ img {
   }
 
 .shadow:hover {
+    display: block;
     border: 1px var(--hero-white);
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
